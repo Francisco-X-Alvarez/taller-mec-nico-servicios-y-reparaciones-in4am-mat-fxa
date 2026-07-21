@@ -1,0 +1,180 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+
+/* Created on : 6/07/2026, 11:26:27
+   Author     : Francisco Franco
+*/
+
+/* CONFIGURACIÓN GLOBAL */
+.root {
+    -fx-background-color: #FAF6F0; 
+    -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* PESTAÑAS (TABPANE) Y NAVEGACIÓN */
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #E2E8F0; 
+    -fx-padding: 8px 8px 0px 8px;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-image: url("carro_fondo.jpg"); 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center; 
+    -fx-background-size: 650px auto; 
+}
+
+.tab-pane .tab {
+    -fx-background-color: #CBD5E1; 
+    -fx-background-radius: 4px 4px 0px 0px;
+    -fx-padding: 8px 18px;
+    -fx-background-insets: 0 1 0 0;
+    -fx-cursor: hand;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-font-family: 'Century Gothic', sans-serif;
+    -fx-text-fill: #475569; 
+    -fx-font-weight: normal;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #991B1B; 
+    -fx-background-radius: 4px 4px 0px 0px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #FFFFFF; 
+    -fx-font-weight: bold;  
+}
+
+.tab-pane .tab:hover:not(:selected) {
+    -fx-background-color: #94A3B8;
+}
+
+.tab-pane .tab .focus-indicator {
+    -fx-border-color: transparent !important;
+    -fx-border-style: none !important;
+}
+
+.tab-pane .tab:focused {
+    -fx-background-color: transparent;
+}
+
+/* LAYOUTS Y CONTENEDORES */
+.vbox-transparente {
+    -fx-background-color: transparent !important;
+}
+
+.contenedor-formulario {
+    -fx-background-color: rgba(250, 246, 240, 0.88); 
+    -fx-background-radius: 12px;
+    -fx-padding: 20px;
+    -fx-max-width: 380px; 
+    -fx-pref-width: 380px;
+    -fx-effect: dropshadow(two-pass-box, rgba(0, 0, 0, 0.15), 10, 0, 0, 4);
+}
+
+/* TABLAS Y DATOS */
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.4) !important; 
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #E2E8F0;
+}
+
+.table-view .table-cell {
+    -fx-background-color: transparent !important;
+    -fx-text-fill: #1E293B; 
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.table-view .placeholder {
+    -fx-background-color: transparent !important;
+}
+
+.table-view .column-header {
+    -fx-background-color: rgba(241, 245, 249, 0.85); 
+    -fx-border-color: transparent #E2E8F0 transparent transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: 'Century Gothic', sans-serif;
+    -fx-font-weight: bold; 
+    -fx-text-fill: #475569;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: rgba(254, 243, 199, 0.8) !important; 
+}
+
+.table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: #991B1B !important;
+    -fx-font-weight: bold;
+}
+
+/* ENTRADA DE DATOS */
+.label {
+    -fx-font-family: 'Segoe UI', sans-serif; 
+    -fx-text-fill: #1E293B; 
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.85), 3, 0.5, 0, 0);
+}
+
+.text-field {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 6px;
+    -fx-border-color: #CBD5E1;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 10px;
+    -fx-text-fill: #0F172A;
+}
+
+.text-field:focused {
+    -fx-border-color: #991B1B; 
+    -fx-border-width: 1.5px;
+}
+
+.combo-box {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 6px;
+    -fx-border-color: #CBD5E1;
+    -fx-border-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.combo-box:focused {
+    -fx-border-color: #991B1B;
+}
+
+/* BOTONES Y ACCIONES */
+.button {
+    -fx-font-family: 'Century Gothic', sans-serif;
+    -fx-background-color: #991B1B;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 24px;
+    -fx-background-radius: 6px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #7F1D1D; 
+}
